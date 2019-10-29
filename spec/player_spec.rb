@@ -6,6 +6,10 @@ describe Player do
         expect(subject).to be_an_instance_of(Player)
     end
 
+    it 'starts with players having 100hp' do
+        expect(subject.health).to eq 100
+    end
+
     describe '#name' do
         it 'returns the name' do
             expect(nate.name).to eq 'Nate'
